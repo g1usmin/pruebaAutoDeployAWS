@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Build started 
+      - mvn clean package
+  post_build:
+    commands:
+      - echo build completed 
+artifacts:
+  files:
+    - target/apptestgabi.jar
+  discard-paths: yes  
