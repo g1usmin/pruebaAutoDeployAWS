@@ -11,4 +11,6 @@ phases:
 artifacts:
   files:
     - target/apptestgabi.jar
-  discard-paths: yes  
+
+
+
