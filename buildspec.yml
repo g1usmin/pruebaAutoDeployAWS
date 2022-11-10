@@ -15,5 +15,5 @@ phases:
     - mvn package
 artifacts:
   files:
-  - target/ejercicio2helloname-0.0.1-SNAPSHOT.jar
+  - target/ejercicio2helloname-0.0.1-SNAPSHOT.war
   - .ebextensions/**/*
