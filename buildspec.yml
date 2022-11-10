@@ -1,15 +1,20 @@
 version: 0.2
-
 phases:
+  install:
+    runtime-versions:
+      java: corretto11
+  pre_build:
+    commands:
+    - echo In the pre_build phase...
   build:
     commands:
-      - echo build iniciado
-      - mvn clean package
+    - echo Build started 
   post_build:
     commands:
-      - echo build completed
+    - echo Build completed 
+    - mvn package
+    - mv target/ejercicio2helloname-0.0.1-SNAPSHOT.war target/ejercicio2helloname-0.0.1-SNAPSHOT.war
 artifacts:
   files:
-    - target/ejercicio2helloname-0.0.1-SNAPSHOT.jar
-
-
+  - ejercicio2helloname-0.0.1-SNAPSHOT.war
+  - .ebextensions/**/*
