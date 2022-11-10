@@ -3,7 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo build started
+      - echo build iniciado
       - mvn clean package
   post_build:
     commands:
