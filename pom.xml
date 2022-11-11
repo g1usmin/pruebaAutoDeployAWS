@@ -11,7 +11,7 @@
 	<groupId>com.digitalhouse</groupId>
 	<artifactId>ejercicio2helloname</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>ejercicio2helloname</name>
 	<description>Ejercicio 2 Individual</description>
 	<properties>

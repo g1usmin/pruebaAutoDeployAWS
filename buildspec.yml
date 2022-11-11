@@ -1,19 +1,19 @@
 version: 0.2
+
 phases:
   install:
     runtime-versions:
-      java: corretto17
-  pre_build:
-    commands:
-    - echo In the pre_build phase...
+      java: corretto11
   build:
     commands:
-    - echo Build started 
+      - echo build iniciado
+      - mvn clean package
   post_build:
     commands:
-    - echo Build completed 
-    - mvn package
+      - echo build completed
 artifacts:
   files:
-  - target/ejercicio2helloname-0.0.1-SNAPSHOT.war
-  - .ebextensions/**/*
+    - target/*.jar
+    - scripts/*.sh
+    - appspec.yml
+  discard-paths: yes
